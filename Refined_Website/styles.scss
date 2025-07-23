@@ -1,0 +1,10 @@
+$footer-bg: #333;
+$footer-color: #fff;
+
+.sass-footer {
+    background-color: $footer-bg;
+    color: $footer-color;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+}

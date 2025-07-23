@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="text-center mb-4">
+            <h1 style="color: darkblue;">Welcome to My Website</h1>
+            <p class="lead">An all-in-one front-end project with interactive features</p>
+        </header>
+
+        <section class="text-center mb-4">
+            <button class="btn btn-primary" onclick="showForm()">Open Form</button>
+        </section>
+
+        <section id="form-section" class="d-none">
+            <h2 class="mb-3">User Form</h2>
+            <form id="userForm" class="border p-4 rounded bg-light">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" class="form-control" required>
+                    <small id="nameError" class="text-danger"></small>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </section>
+
+        <section id="api-data" class="mt-5 d-none">
+            <h2>Fetched API Data</h2>
+            <div class="list-group" id="postList"></div>
+        </section>
+
+        <footer class="mt-5 text-center sass-footer">
+            <p>&copy; 2025 Interactive Front-End Site</p>
+        </footer>
+    </div>
+</body>
+</html>
